@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/tornado/option.xsd">
+	<import>
+        
+        <categories>
+			<category name="user.welcome_thread">
+				<parent>user.register</parent>
+			</category>
+        </categories>
+
+		<options>
+			<option name="welcome_thread_enable">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>1</showorder>
+				<optiontype>boolean</optiontype>
+                <defaultvalue>0</defaultvalue>
+                <enableoptions>welcome_thread_destination,welcome_thread_user,welcome_thread_title,welcome_thread_content,welcome_thread_tags,welcome_thread_close,welcome_thread_disable</enableoptions>
+			</option>
+
+			<option name="welcome_thread_destination">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>2</showorder>
+				<optiontype>WBBBoardSelect</optiontype>
+			</option>
+
+			<option name="welcome_thread_user">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>3</showorder>
+				<optiontype>text</optiontype>
+			</option>
+
+			<option name="welcome_thread_title">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>4</showorder>
+				<optiontype>textI18n</optiontype>
+                <supporti18n>1</supporti18n>
+			</option>
+
+			<option name="welcome_thread_content">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>5</showorder>
+				<optiontype>textareaI18n</optiontype>
+                <supporti18n>1</supporti18n>
+			</option>
+
+			<option name="welcome_thread_tags">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>6</showorder>
+				<optiontype>textI18n</optiontype>
+                <supporti18n>1</supporti18n>
+			</option>
+
+			<option name="welcome_thread_close">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>7</showorder>
+				<optiontype>boolean</optiontype>
+                <defaultvalue>0</defaultvalue>
+			</option>
+
+			<option name="welcome_thread_disable">
+				<categoryname>user.welcome_thread</categoryname>
+				<showorder>8</showorder>
+				<optiontype>boolean</optiontype>
+                <defaultvalue>0</defaultvalue>
+			</option>
+		</options>
+
+	</import>
+</data>
