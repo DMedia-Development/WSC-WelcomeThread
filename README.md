@@ -9,7 +9,7 @@ Dieses Plugin für die [WoltLab Suite](https://woltlab.com) erstellt in Ihrem Fo
 - Auswahl des Zielforums für die Erstellung der Willkommensthemen
 - Auswahl des Beitragsauthors/des Themenerstellers
 - Festlegen eines benutzerdefinierten Thementitels
-- Festlegen eines benutzerdefinierten Themeninhalts
+- Festlegen eines benutzerdefinierten Themeninhalts (BBCodes & HTML)
 - Mögliche Verwendung des Benutzernamens im Thementitel und Themeninhalt (Erwähnung)
 - Festlegen von benutzerdefinierten Schlagworten (Tags) für Willkommensthemen
 - Option zur automatischen Schließung von Willkommensthemen
@@ -26,7 +26,7 @@ This plugin for the [WoltLab Suite](https://woltlab.com) creates a welcome threa
 - Selection of the destination forum in which the welcome threads will be created
 - Set the post author/thread creator
 - Set a custom thread title
-- Set a custom thread content
+- Set a custom thread content (BBCodes & HTML)
 - Use a placeholder variable to mention the user in the thread title and thread content
 - Set custom tags for all welcome threads
 - Option to automatically close welcome threads
