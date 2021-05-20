@@ -60,9 +60,12 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
         $threadTitle = WCF::getLanguage()->get(WELCOME_THREAD_TITLE);
         $threadContent = WCF::getLanguage()->get(WELCOME_THREAD_CONTENT);
 
+        // insert HTML line breaks before all newlines
+        $threadContent = \nl2br($threadContent, false);
+
         // replace variables in title and content
         $threadTitle = \str_replace('{username}', $newUser->username, $threadTitle);
-        $threadContent = \str_replace('{username}', $newUser->username, $threadContent);
+        $threadContent = \str_replace('{username}', '@' . $newUser->username, $threadContent);
 
         // get thread tags
         $threadTags = [];
@@ -86,7 +89,7 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
                 'isDisabled' => WELCOME_THREAD_DISABLE
             ],
             'postData' => [
-                'message' => $threadContent
+                'message' => $htmlInputProcessor->getHtml()
             ],
             'tags' => $threadTags,
             'subscribeThread' => false,
