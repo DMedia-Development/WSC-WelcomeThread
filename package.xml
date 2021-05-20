@@ -6,8 +6,8 @@
 		<packagename language="de"><![CDATA[WoltLab Suite Forum: Willkommensthemen]]></packagename>
 		<packagedescription><![CDATA[This plugin creates a welcome thread for your new members.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Dieses Plugin erstellt ein Willkommensthema für Ihre neuen Mitglieder.]]></packagedescription>
-		<version>1.0.0</version>
-		<date>2021-05-10</date>
+		<version>1.0.1</version>
+		<date>2021-05-20</date>
 	</packageinformation>
 	
 	<authorinformation>
@@ -28,6 +28,10 @@
 		<instruction type="language"/>
 		<instruction type="eventListener" />
 		<instruction type="option" />
+		<instruction type="file" application="wbb" />
+	</instructions>
+
+	<instructions type="update" fromversion="1.0.0">
 		<instruction type="file" application="wbb" />
 	</instructions>
 </package>
