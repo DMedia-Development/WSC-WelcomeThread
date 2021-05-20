@@ -6,7 +6,6 @@ use wcf\system\event\listener\IParameterizedEventListener;
 use wcf\system\WCF;
 use wcf\system\language\LanguageFactory;
 use wcf\system\html\input\HtmlInputProcessor;
-use wcf\system\event\EventHandler;
 use wcf\data\user\User;
 use wcf\util\StringUtil;
 use wcf\util\MessageUtil;
@@ -62,13 +61,13 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
         $threadContent = WCF::getLanguage()->get(WELCOME_THREAD_CONTENT);
 
         // replace variables in title and content
-        $threadTitle = str_replace('{username}', $newUser->username, $threadTitle);
-        $threadContent = str_replace('{username}', $newUser->username, $threadContent);
+        $threadTitle = \str_replace('{username}', $newUser->username, $threadTitle);
+        $threadContent = \str_replace('{username}', $newUser->username, $threadContent);
 
         // get thread tags
         $threadTags = [];
         if (MODULE_TAGGING && WBB_THREAD_ENABLE_TAGS && !empty(WELCOME_THREAD_TAGS)) {
-            $threadTags = array_unique(ArrayUtil::trim(explode(',', WCF::getLanguage()->get(WELCOME_THREAD_TAGS))));
+            $threadTags = \array_unique(ArrayUtil::trim(\explode(',', WCF::getLanguage()->get(WELCOME_THREAD_TAGS))));
         }
 
         // create thread
@@ -79,7 +78,7 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
             'data' => [
                 'boardID' => $boardID,
                 'languageID' => $newUser->languageID ?: LanguageFactory::getInstance()->getDefaultLanguageID(),
-                'topic' => mb_substr(MessageUtil::stripCrap($threadTitle), 0, 255),
+                'topic' => \mb_substr(MessageUtil::stripCrap($threadTitle), 0, 255),
                 'time' => TIME_NOW,
                 'userID' => $threadAuthor->userID,
                 'username' => $threadAuthor->username,
