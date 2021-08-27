@@ -1,8 +1,8 @@
 <?php
 
 namespace wbb\system\event\listener;
-use wcf\system\event\listener\IParameterizedEventListener;
 
+use wcf\system\event\listener\IParameterizedEventListener;
 use wcf\system\WCF;
 use wcf\system\language\LanguageFactory;
 use wcf\system\html\input\HtmlInputProcessor;
@@ -38,7 +38,7 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
         if (!isset($newUser->userID)) {
             return;
         }
-        
+
         // destination forum can not be empty
         $boardID = WELCOME_THREAD_DESTINATION;
         if (empty($boardID)) {

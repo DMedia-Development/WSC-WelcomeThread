@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/tornado/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
+<language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
 
     <category name="wcf.acp.option">
             <item name="wcf.acp.option.category.user.welcome_thread"><![CDATA[Willkommensthemen]]></item>
