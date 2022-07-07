@@ -5,8 +5,8 @@
 		<packagename language="de"><![CDATA[WoltLab Suite Forum: Willkommensthemen]]></packagename>
 		<packagedescription><![CDATA[This plugin creates a welcome thread for your new members.]]></packagedescription>
 		<packagedescription language="de"><![CDATA[Dieses Plugin erstellt ein Willkommensthema für Ihre neuen Mitglieder.]]></packagedescription>
-		<version>5.4.0</version>
-		<date>2021-08-27</date>
+		<version>5.5.0</version>
+		<date>2022-07-07</date>
 	</packageinformation>
 	
 	<authorinformation>
@@ -20,7 +20,7 @@
 	</requiredpackages>
 	
 	<excludedpackages>
-		<excludedpackage version="5.5.0 Alpha 1">com.woltlab.wcf</excludedpackage>
+		<excludedpackage version="6.0.0 Alpha 1">com.woltlab.wcf</excludedpackage>
 	</excludedpackages>
 
 	<instructions type="install">

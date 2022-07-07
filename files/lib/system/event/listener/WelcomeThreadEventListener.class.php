@@ -18,13 +18,12 @@ use wbb\data\thread\ThreadAction;
  * Creates a welcome thread for new members of the website.
  *
  * @author Moritz Dahlke (DMedia)
- * @copyright 2021 DMedia
+ * @copyright 2021-2022 DMedia
  * @license GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package WoltLabSuite\Forum\System\Event\Listener
  */
 class WelcomeThreadEventListener implements IParameterizedEventListener
 {
-
     public function execute($eventObj, $className, $eventName, array &$parameters)
     {
         $this->$eventName($eventObj);
@@ -100,5 +99,4 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
         $boardEditor = new BoardEditor(BoardCache::getInstance()->getBoard($boardID));
         $boardEditor->updateLastPost();
     }
-
 }
