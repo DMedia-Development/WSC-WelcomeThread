@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/language.xsd" languagecode="de" languagename="Deutsch" countrycode="de">
+    <import>
 
-    <category name="wcf.acp.option">
-            <item name="wcf.acp.option.category.user.welcome_thread"><![CDATA[Willkommensthemen]]></item>
+        <category name="wcf.acp.option">
+                <item name="wcf.acp.option.category.user.welcome_thread"><![CDATA[Willkommensthemen]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_enable"><![CDATA[Willkommensthemen aktivieren]]></item>
-  
-            <item name="wcf.acp.option.welcome_thread_destination"><![CDATA[Zielforum]]></item>
-            <item name="wcf.acp.option.welcome_thread_destination.description"><![CDATA[Die erzeugten Themen werden im ausgewählten Forum erstellt.]]></item>
+                <item name="wcf.acp.option.welcome_thread_enable"><![CDATA[Willkommensthemen aktivieren]]></item>
+    
+                <item name="wcf.acp.option.welcome_thread_destination"><![CDATA[Zielforum]]></item>
+                <item name="wcf.acp.option.welcome_thread_destination.description"><![CDATA[Die erzeugten Themen werden im ausgewählten Forum erstellt.]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_user"><![CDATA[Benutzername]]></item>
-            <item name="wcf.acp.option.welcome_thread_user.description"><![CDATA[Der ausgewählte Benutzer wird als Autor der erzeugten Themen verwendet.]]></item>
+                <item name="wcf.acp.option.welcome_thread_user"><![CDATA[Benutzername]]></item>
+                <item name="wcf.acp.option.welcome_thread_user.description"><![CDATA[Der ausgewählte Benutzer wird als Autor der erzeugten Themen verwendet.]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_title"><![CDATA[Themen Titel]]></item>
-            <item name="wcf.acp.option.welcome_thread_title.description"><![CDATA[Dieses Feld unterstützt die folgenden Variablen: <em>{username}</em>]]></item>
-            
-            <item name="wcf.acp.option.welcome_thread_content"><![CDATA[Themen Inhalt]]></item>
-            <item name="wcf.acp.option.welcome_thread_content.description"><![CDATA[Personalisierte Willkommensnachricht für neue Mitglieder.<br />Dieses Feld unterstützt HTML und die folgenden Variablen: <em>{username}</em>]]></item>
+                <item name="wcf.acp.option.welcome_thread_title"><![CDATA[Themen Titel]]></item>
+                <item name="wcf.acp.option.welcome_thread_title.description"><![CDATA[Dieses Feld unterstützt die folgenden Variablen: <em>{username}</em>]]></item>
+                
+                <item name="wcf.acp.option.welcome_thread_content"><![CDATA[Themen Inhalt]]></item>
+                <item name="wcf.acp.option.welcome_thread_content.description"><![CDATA[Personalisierte Willkommensnachricht für neue Mitglieder.<br />Dieses Feld unterstützt HTML und die folgenden Variablen: <em>{username}</em>]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_tags"><![CDATA[Themen Schlagworte]]></item>
-            <item name="wcf.acp.option.welcome_thread_tags.description"><![CDATA[Die erzeugten Themen werden den hier festgelegten Schlagworten (Tags) zugeordnet. Mehrere Schlagworte müssen durch ein Komma getrennt werden.]]></item>
+                <item name="wcf.acp.option.welcome_thread_tags"><![CDATA[Themen Schlagworte]]></item>
+                <item name="wcf.acp.option.welcome_thread_tags.description"><![CDATA[Die erzeugten Themen werden den hier festgelegten Schlagworten (Tags) zugeordnet. Mehrere Schlagworte müssen durch ein Komma getrennt werden.]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_close"><![CDATA[Themen nach Erstellung schließen]]></item>
+                <item name="wcf.acp.option.welcome_thread_close"><![CDATA[Themen nach Erstellung schließen]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_disable"><![CDATA[Themen nach Erstellung deaktivieren]]></item>
-    </category>
+                <item name="wcf.acp.option.welcome_thread_disable"><![CDATA[Themen nach Erstellung deaktivieren]]></item>
+        </category>
 
+    </import>
 </language>

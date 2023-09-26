@@ -1,29 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <language xmlns="https://www.woltlab.com" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://www.woltlab.com https://www.woltlab.com/XSD/5.4/language.xsd" languagecode="en" languagename="English" countrycode="gb">
+    <import>
 
-    <category name="wcf.acp.option">
-            <item name="wcf.acp.option.category.user.welcome_thread"><![CDATA[Welcome Thread]]></item>
+        <category name="wcf.acp.option">
+                <item name="wcf.acp.option.category.user.welcome_thread"><![CDATA[Welcome Thread]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_enable"><![CDATA[Enable Welcome Threads]]></item>
+                <item name="wcf.acp.option.welcome_thread_enable"><![CDATA[Enable Welcome Threads]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_destination"><![CDATA[Destination Forum]]></item>
-            <item name="wcf.acp.option.welcome_thread_destination.description"><![CDATA[Threads will be created in the selected forum.]]></item>
+                <item name="wcf.acp.option.welcome_thread_destination"><![CDATA[Destination Forum]]></item>
+                <item name="wcf.acp.option.welcome_thread_destination.description"><![CDATA[Threads will be created in the selected forum.]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_user"><![CDATA[Username]]></item>
-            <item name="wcf.acp.option.welcome_thread_user.description"><![CDATA[Threads will be created using the author you have entered.]]></item>
+                <item name="wcf.acp.option.welcome_thread_user"><![CDATA[Username]]></item>
+                <item name="wcf.acp.option.welcome_thread_user.description"><![CDATA[Threads will be created using the author you have entered.]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_title"><![CDATA[Thread Title]]></item>
-            <item name="wcf.acp.option.welcome_thread_title.description"><![CDATA[This field supports the following variables: <em>{username}</em>]]></item>
+                <item name="wcf.acp.option.welcome_thread_title"><![CDATA[Thread Title]]></item>
+                <item name="wcf.acp.option.welcome_thread_title.description"><![CDATA[This field supports the following variables: <em>{username}</em>]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_content"><![CDATA[Thread Content]]></item>
-            <item name="wcf.acp.option.welcome_thread_content.description"><![CDATA[Personalized welcome message for new members.<br />This field supports HTML and the following variables: <em>{username}</em>]]></item>
+                <item name="wcf.acp.option.welcome_thread_content"><![CDATA[Thread Content]]></item>
+                <item name="wcf.acp.option.welcome_thread_content.description"><![CDATA[Personalized welcome message for new members.<br />This field supports HTML and the following variables: <em>{username}</em>]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_tags"><![CDATA[Thread Tags]]></item>
-            <item name="wcf.acp.option.welcome_thread_tags.description"><![CDATA[You can specify multiple thread tags for the created threads. Separate multiple thread tags with a comma.]]></item>
+                <item name="wcf.acp.option.welcome_thread_tags"><![CDATA[Thread Tags]]></item>
+                <item name="wcf.acp.option.welcome_thread_tags.description"><![CDATA[You can specify multiple thread tags for the created threads. Separate multiple thread tags with a comma.]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_close"><![CDATA[Close threads after creation]]></item>
+                <item name="wcf.acp.option.welcome_thread_close"><![CDATA[Close threads after creation]]></item>
 
-            <item name="wcf.acp.option.welcome_thread_disable"><![CDATA[Disable threads after creation]]></item>
-    </category>
+                <item name="wcf.acp.option.welcome_thread_disable"><![CDATA[Disable threads after creation]]></item>
+        </category>
 
+    </import>
 </language>
