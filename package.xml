@@ -24,10 +24,10 @@
 	</excludedpackages>
 
 	<instructions type="install">
-        <instruction type="file" application="wbb" />
-        <instruction type="language"/>
-        <instruction type="option" />
-        <instruction type="eventListener" />
+		<instruction type="file" application="wbb" />
+		<instruction type="language"/>
+		<instruction type="option" />
+		<instruction type="eventListener" />
 	</instructions>
 
 	<instructions type="update" fromversion="1.0.*">

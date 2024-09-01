@@ -2,17 +2,17 @@
 
 namespace wbb\system\event\listener;
 
-use wcf\system\event\listener\IParameterizedEventListener;
-use wcf\system\WCF;
-use wcf\system\language\LanguageFactory;
-use wcf\system\html\input\HtmlInputProcessor;
-use wcf\data\user\User;
-use wcf\util\StringUtil;
-use wcf\util\MessageUtil;
-use wcf\util\ArrayUtil;
 use wbb\data\board\BoardCache;
 use wbb\data\board\BoardEditor;
 use wbb\data\thread\ThreadAction;
+use wcf\data\user\User;
+use wcf\system\event\listener\IParameterizedEventListener;
+use wcf\system\html\input\HtmlInputProcessor;
+use wcf\system\language\LanguageFactory;
+use wcf\system\WCF;
+use wcf\util\ArrayUtil;
+use wcf\util\MessageUtil;
+use wcf\util\StringUtil;
 
 /**
  * Creates a welcome thread for new members of the website.
@@ -25,7 +25,7 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
 {
     public function execute($eventObj, $className, $eventName, array &$parameters)
     {
-        $this->$eventName($eventObj);
+        $this->{$eventName}($eventObj);
     }
 
     protected function saved()
@@ -84,14 +84,14 @@ class WelcomeThreadEventListener implements IParameterizedEventListener
                 'userID' => $threadAuthor->userID,
                 'username' => $threadAuthor->username,
                 'isClosed' => WELCOME_THREAD_CLOSE,
-                'isDisabled' => WELCOME_THREAD_DISABLE
+                'isDisabled' => WELCOME_THREAD_DISABLE,
             ],
             'postData' => [
-                'message' => $htmlInputProcessor->getHtml()
+                'message' => $htmlInputProcessor->getHtml(),
             ],
             'tags' => $threadTags,
             'subscribeThread' => false,
-            'htmlInputProcessor' => $htmlInputProcessor
+            'htmlInputProcessor' => $htmlInputProcessor,
         ]))->executeAction();
 
         // update last post
